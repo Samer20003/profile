@@ -1,0 +1,249 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* we user border-box because we want to modify the orignal size of the box inside it not outside */
+  scroll-behavior: smooth;
+}
+header {
+  background-color: #f0f0f0;
+  width: 100%;
+  position: fixed; /* لما بدي اعمل سكرول الهدر بضل ثابت */
+  z-index: 999; /* عشان ما اشي يغطي ع الهيدر */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 200px;
+}
+.logo {
+  text-decoration: none; /* no line*/
+  color: #3a6cf4;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.8em; /* any size in body we will be reltive */
+}
+.nav a {
+  color: #3a6cf4;
+  text-decoration: none;
+  font-size: 1.1em;
+  font-weight: 500;
+  padding-left: 30px;
+}
+.nav a:hover {
+  color: #601cfc;
+}
+section {
+  padding: 100px 200px;
+}
+.main {
+  width: 100%;
+  min-height: 100vh; /* اقل اشي 100 بس عادي يمكن يزيد حسب العناصر الموجوده قابل للزياده يعني */
+  display: flex;
+  align-items: center;
+  background: url(imges/2.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-top: 30px;
+  /* background-attachment: fixed;  we use it the pic will stay fix  */
+}
+
+.main h2 {
+  color: #fff;
+  font-size: 1.4em;
+  font-weight: 500;
+}
+
+.main h2 span {
+  display: inline-block; /* we use it beacuse the span is inline and cant use margin on inline */
+  margin-top: 10px;
+  color: #4e9eff;
+  font-size: 3em;
+  font-weight: 600;
+}
+.main h3 {
+  color: #fff;
+  font-size: 2em;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+.main-btn {
+  color: #fff;
+  background-color: #3a6cf4;
+  text-decoration: none;
+  font-size: 1.1em;
+  font-weight: 600;
+  display: inline-block;
+  padding: 0.9375em 2.1875em;
+  letter-spacing: 1px;
+  border-radius: 15px;
+  margin-bottom: 40px;
+  transition: 0.7s ease; /* عشان يكبر الزر بتحول بطيئ */
+}
+.main-btn:hover {
+  background-color: #601cfc;
+  transform: scale(1.1);
+}
+.social-icons a {
+  color: #fff;
+  font-size: 1.7em;
+  padding-right: 30px;
+}
+.title {
+  display: flex;
+  justify-content: center;
+  color: #4e9eff;
+  font-size: 2.2em;
+  font-weight: 800;
+  margin-bottom: 30px;
+}
+.content {
+  display: flex;
+  justify-content: center;
+  flex-direction: row; /* the direction of elemnts side by side or under */
+  flex-wrap: wrap; /* when we use it and dosent have enoguth space the cards take palce under */
+}
+.card {
+  background-color: #fff;
+  width: 21.25em;
+  box-shadow: 0 5px 25px rgba(1, 1, 1, 15%);
+  border-radius: 10px;
+  padding: 25px; /*give us a space inside the elemnts*/
+  margin: 15px; /* give us a space oustside the elemnts*/
+  transition: 0.7s ease; /* عشان يكبر الزر بتحول بطيئ */
+}
+.card:hover {
+  transform: scale(1.1);
+}
+.icon {
+  color: #601cfc;
+  font-size: 8em;
+  text-align: center;
+}
+.info {
+  text-align: center;
+}
+.info h3 {
+  color: #3a6cf4;
+  font-size: 1.2em;
+  font-weight: 700;
+  margin: 10px;
+}
+.projects {
+  background-color: #000016;
+}
+.projects.content {
+  margin-top: 30px;
+}
+.project-card {
+  background-color: #fff;
+  border: 1px solid #fff;
+  min-height: 14em;
+  width: 18em;
+  overflow: hidden;
+  border-radius: 10px;
+  margin: 20px;
+  transition: 0.7s ease;
+}
+.project-card:hover {
+  transform: scale(1.1);
+}
+.project-card:hover .proj-img {
+  opacity: 0.9;
+}
+.proj-img img {
+  width: 100%;
+  height: 100%;
+}
+.proj-info {
+  padding: 1em;
+}
+.proj-p {
+  font-size: 0.9em;
+  color: #000000;
+}
+.proj-title {
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+  font-weight: 800;
+  margin-top: 10px;
+}
+.more-detailes {
+  text-decoration: none;
+  color: #3a6cf4;
+}
+.more-detailes:hover {
+  color: #601cfc;
+}
+.content .icon {
+  font-size: 4em;
+}
+.content .info h3 {
+  color: #000000;
+}
+.footer {
+  background-color: #000016;
+  color: #fff;
+  padding: 2em;
+  display: flex;
+  justify-content: space-between;
+}
+.footer_title {
+  font-size: 1em;
+  font-weight: 600;
+}
+.footer span {
+  color: #3a6cf4;
+}
+.main-div h2,
+h3,
+.main-btn,
+.social-icons {
+  transform: translateY(50px);
+  filter: blur(20px);
+  opacity: 0;
+  animation: showContent 0.5s 1s linear 1 forwards;
+}
+.main-div h2 {
+  animation-delay: 1.2s !important;
+}
+.main-div h3 {
+  animation-delay: 1.4s !important;
+}
+.main-div .main-btn {
+  animation-delay: 1.6s !important;
+}
+.main-div .social-icons {
+  animation-delay: 1.8s !important;
+}
+
+@keyframes showContent {
+  to {
+    transform: translateY(0px);
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+@media (max-width: 1023px) {
+  header {
+    padding: 12px 20px;
+  }
+  .nav {
+    padding-left: 10px;
+  }
+  .title {
+    font-size: 1.6em;
+  }
+  section {
+    padding: 80px 20px;
+  }
+  .content h2 {
+    font-size: 1em;
+  }
+  .content h3 {
+    font-size: 1em;
+  }
+}
