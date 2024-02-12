@@ -15,6 +15,25 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 10px 200px;
+  transition: 0.5s ease;
+  top: 0;
+  left: 0;
+}
+header .navigation {
+  position: relative;
+}
+header .navigation .nav a:before {
+  content: "";
+  position: absolute;
+  background-color: #000000;
+  width: 0;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  transition: 0.3s ease;
+}
+header .navigation .nav a:hover:before {
+  width: 100%;
 }
 .logo {
   text-decoration: none; /* no line*/
@@ -24,11 +43,13 @@ header {
   font-size: 1.8em; /* any size in body we will be reltive */
 }
 .nav a {
+  position: relative;
   color: #3a6cf4;
   text-decoration: none;
   font-size: 1.1em;
   font-weight: 500;
-  padding-left: 30px;
+  margin-left: 30px;
+  transition: 0.3s ease;
 }
 .nav a:hover {
   color: #601cfc;
