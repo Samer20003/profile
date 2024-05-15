@@ -62,7 +62,7 @@ section {
   min-height: 100vh; /* اقل اشي 100 بس عادي يمكن يزيد حسب العناصر الموجوده قابل للزياده يعني */
   display: flex;
   align-items: center;
-  background: url(imges/2.jpg) no-repeat;
+  background: url(imges/BackGround.jpg) no-repeat;
   background-size: cover;
   background-position: center;
   padding-top: 30px;
